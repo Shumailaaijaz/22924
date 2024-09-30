@@ -1,6 +1,6 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import Wrapper from "../components/shared/wrapper"
+import Wrapper from "../components/shared/Wrapper"
 
 import ProfilerPic from "../components/public/profile.png"
 import Image from "next/image"
