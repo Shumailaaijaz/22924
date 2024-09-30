@@ -2,26 +2,153 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+  margin: 0;
+  padding:0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.header{
+  background:linear-gradient(to right,rgb(147, 147, 236),80%,rgb(247, 72, 247) );
+  color:brown;
+  padding: 2px;
+  margin-bottom: 10px;
+  /* min-height: calc(100vh-50px); */
+  padding-top: 20px;
+  margin-top: 30px;
+  border: #8b3473;
+  border-width: 10px;
+  position:sticky;
+  top: 0;
+
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.header-buttons{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin:right 10px;
+  gap: 12px
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.footer{
+  background:linear-gradient(to right,rgb(147, 147, 236),80%,rgb(247, 72, 247) );;
+  color: rgb(65, 4, 4);
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: #7af37a;
+  border-width: 2px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes the full height of the viewport */
+}
+
+.content {
+  flex: 1; /* This will push the footer to the bottom by taking up available space */
+}
+
+.objective{
+  color: white;
+  text-align: justify;
+   hyphens: auto;
+}
+
+.Certification{
+  color: white;
+  text-align: justify;
+   hyphens: auto;
+}
+
+body { 
+  font-family: Arial, sans-serif;
+  background-color: cornflowerblue;
+  margin: 0;
+}
+
+.resume-container{
+  display: flex;
+  background-color: white;
+  width:80%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0, 1);
+}
+
+/* Left Section Styling */
+.left-section {
+  background-color: #7af37a;
+  color: white;
+  padding: 20px;
+  width: 35%;
+  text-align: center;
+  border-right: 5px solid #8b3473;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  margin-top: 10%;
+  border-radius: 50%;
+  border: 5px solid #34d7e2;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 10px 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h3{
+  font-size: 18px;
+  padding: 2%;
+  margin: 20px 0 10px;
+  color:black;
+  border-radius:10px;
+  box-shadow: 0 0 15px rosybrown;
+  margin-top:5%;
+  margin-bottom: 5%;
+}
+
+ul {
+  list-style-type: fill round;
+  padding: 10;
+  margin: 10px 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+/* Right Section Styling */
+.right-section {
+  padding: 20px;
+  width: 65%;
+}
+
+button {
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 0 15px black;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #e05cda;
+}
+
+.HeroPoster{
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  justify-content: flex-end;
 }
