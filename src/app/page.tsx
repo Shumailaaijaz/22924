@@ -6,7 +6,7 @@ import HeroPoster from "./components/public/heroimage.png"
 
 export default function Home() {
   return (
-    <section className="bg-blue-700 flex heigh calc(100vh-50px)">
+    <section className="bg-blue-700 flex heigh 100%">
     
       <Wrapper>
        <Header/>

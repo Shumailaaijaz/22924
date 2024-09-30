@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Wrapper from "./shared/wrapper"
+import Wrapper from "./shared/Wrapper"
 
 const Footer = () => {
   return (
